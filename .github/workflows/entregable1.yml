@@ -9,6 +9,7 @@ jobs:
     runs-on: windows-latest
     permissions:
       contents: write
+       statuses: write
 
 
     steps:
