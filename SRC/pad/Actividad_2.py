@@ -5,7 +5,7 @@ import os
 
 class ejercicios:
     def __init__(self):
-        datos = [(i, None) for i in range(1, 22)] 
+        datos = [(i, None) for i in range(1, 11)] 
         self.df= pd.DataFrame(data=datos,columns=["#ejercicios", "valor"])
         self.ruta_raiz=os.path.abspath(os.getcwd())
         self.ruta_actividad_2 = "{}/SRC/pad/Entregables_actividad_2/".format(self.ruta_raiz)
