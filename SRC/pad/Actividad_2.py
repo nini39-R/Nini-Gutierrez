@@ -89,7 +89,7 @@ class ejercicios:
         print("ejercicio_10", mayores_05)
 
     #Gráficos de dispersión, densidad y contorno:
-    def ejercicio11(self):
+    def ejercicio_11(self):
         #Genera dos arrays de tamaño 100 con números aleatorios y crea un gráfico de dispersión.
         X = np.random.rand(100)
         Y = np.random.rand(100)
@@ -101,10 +101,10 @@ class ejercicios:
         ruta = "{}ejercicio_11.png".format(self.ruta_actividad_2)
         plt.savefig(ruta)
         plt.close()
-        print("ejercicio11", "Gráfico de dispersión")
+        print("ejercicio_11", "Gráfico de dispersión")
         
 
-    def ejercicio12(self):
+    def ejercicio_12(self):
         #Genera un gráfico de dispersión las variables 𝑥 y 𝑦 = 𝑠𝑖𝑛(𝑥)+ ruido Gaussiano. Donde x es un array con númereos entre -2𝜋 𝑦 2𝜋. Grafica también los puntos 𝑦 = 𝑠𝑖𝑛(𝑥) en el mismo plot
         x = np.linspace(-2*np.pi, 2*np.pi, 100)
         y = np.sin(x) + np.random.normal(0, 0.1, 100)
@@ -118,9 +118,9 @@ class ejercicios:
         ruta = "{}ejercicio_12.png".format(self.ruta_actividad_2)
         plt.savefig(ruta)
         plt.close()
-        print("ejercicio12", "Gráfico de dispersión con ruido")
+        print("ejercicio_12", "Gráfico de dispersión con ruido")
 
-    def ejercicio13(self):
+    def ejercicio_13(self):
         #Utiliza la función np.meshgrid para crear una cuadrícula y luego aplica la función z = np.cos(x) + np.sin(y) para generar y mostrar un gráfico de contorno.
         x = np.linspace(-2*np.pi, 2*np.pi, 100)
         y = np.linspace(-2*np.pi, 2*np.pi, 100)
@@ -135,9 +135,9 @@ class ejercicios:
         ruta= "{}ejercicio_13.png".format(self.ruta_actividad_2)
         plt.savefig(ruta)
         plt.close()
-        print("ejercicio13", "Gráfico de contorno")
+        print("ejercicio_13", "Gráfico de contorno")
 
-    def ejercicio14(self):
+    def ejercicio_14(self):
         #Crea un gráfico de dispersión con 1000 puntos aleatorios y utiliza la densidad de estos puntos para ajustar el color de cada punto.
         x = np.random.rand(1000)
         y = np.random.rand(1000)
@@ -150,9 +150,9 @@ class ejercicios:
         rura= "{}ejercicio_14.png".format(self.ruta_actividad_2)
         plt.savefig(rura)
         plt.close()
-        print("ejercicio14", "Gráfico de dispersión con densidad de puntos")
+        print("ejercicio_14", "Gráfico de dispersión con densidad de puntos")
 
-    def ejercicio15(self):
+    def ejercicio_15(self):
         #A partir de la misma función del ejercicio 12, genera un gráfico de contorno lleno.
         x = np.linspace(-2*np.pi, 2*np.pi, 100)
         y = np.linspace(-2*np.pi, 2*np.pi, 100)
@@ -167,9 +167,9 @@ class ejercicios:
         ruta= "{}ejercicio_15.png".format(self.ruta_actividad_2)
         plt.savefig(ruta)
         plt.close()
-        print("ejercicio15", "Gráfico de contorno lleno")
+        print("ejercicio_15", "Gráfico de contorno lleno")
 
-    def ejercicio16(self):
+    def ejercicio_16(self):
         #Añade etiquetas para el eje X (‘Eje X’), eje Y (‘Eje Y’) y un título (‘Gráfico de Dispersión’) a tu gráfico de dispersión del ejercicio 12 y crea leyendas para cada gráfico usando código LaTex
         x = np.linspace(-2*np.pi, 2*np.pi, 100)
         y = np.sin(x) + np.random.normal(0, 0.1, 100)   
@@ -183,10 +183,10 @@ class ejercicios:
         ruta= "{}ejercicio_16.png".format(self.ruta_actividad_2)
         plt.savefig(ruta)
         plt.close()
-        print("ejercicio16", "Gráfico de dispersión con etiquetas")
+        print("ejercicio_16", "Gráfico de dispersión con etiquetas")
 
      #Histogramas
-    def ejercicio17(self):
+    def ejercicio_17(self):
         #Crea un histograma a partir de un array de 1000 números aleatorios generados con una distribución normal.
         array17 = np.random.normal(0, 1, 1000)
         plt.figure()
@@ -197,9 +197,9 @@ class ejercicios:
         ruta= "{}ejercicio_17.png".format(self.ruta_actividad_2)
         plt.savefig(ruta)
         plt.close()
-        print("ejercicio17", "Histograma")
+        print("ejercicio_17", "Histograma")
 
-    def ejercicio18(self):
+    def ejercicio_18(self):
         #Genera dos sets de datos con distribuciones normales diferentes y muéstralos en el mismo histograma.
         array18_1 = np.random.normal(0, 1, 1000)
         array18_2 = np.random.normal(2, 1, 1000)
@@ -213,9 +213,9 @@ class ejercicios:
         ruta= "{}ejercicio_18.png".format(self.ruta_actividad_2)
         plt.savefig(ruta)
         plt.close()
-        print("ejercicio18", "Histograma con dos distribuciones")
+        print("ejercicio_18", "Histograma con dos distribuciones")
 
-    def ejercicio19(self):
+    def ejercicio_19(self):
         #Experimenta con diferentes valores de bins (por ejemplo, 10, 30, 50) en un histograma y observa cómo cambia la representación.
         array19 = np.random.normal(0, 1, 1000)
         plt.figure()
@@ -229,9 +229,9 @@ class ejercicios:
         ruta= "{}ejercicio_19.png".format(self.ruta_actividad_2)
         plt.savefig(ruta)
         plt.close()
-        print("ejercicio19", "Histograma con diferentes bins")
+        print("ejercicio_19", "Histograma con diferentes bins")
 
-    def ejercicio20(self):
+    def ejercicio_20(self):
         #Añade una línea vertical que indique la media de los datos en el histograma.
         array20 = np.random.normal(0, 1, 1000)
         plt.figure()
@@ -244,9 +244,9 @@ class ejercicios:
         ruta= "{}ejercicio_20.png".format(self.ruta_actividad_2)
         plt.savefig(ruta)
         plt.close()
-        print("ejercicio20", "Histograma con media")
+        print("ejercicio_20", "Histograma con media")
 
-    def ejercicio21(self):
+    def ejercicio_21(self):
         #Crea histogramas superpuestos para los dos sets de datos del ejercicio 17, usando colores y transparencias diferentes para distinguirlos.
         array21_1 = np.random.normal(0, 1, 1000)
         array21_2 = np.random.normal(2, 1, 1000)
@@ -260,31 +260,31 @@ class ejercicios:
         ruta= "{}ejercicio_21.png".format(self.ruta_actividad_2)
         plt.savefig(ruta)
         plt.close()
-        print("ejercicio21", "Histograma con dos distribuciones superpuestas")
+        print("ejercicio_21", "Histograma con dos distribuciones superpuestas")
 
 
     def ejecutar(self):
-        self.ejercicio1()
-        self.ejercicio2()
-        self.ejercicio3()
-        self.ejercicio4()
-        self.ejercicio5()
-        self.ejercicio6()
-        self.ejercicio7()
-        self.ejercicio8()
-        self.ejercicio9()
-        self.ejercicio10()
-        self.ejercicio11()
-        self.ejercicio12()
-        self.ejercicio13()
-        self.ejercicio14()
-        self.ejercicio15()
-        self.ejercicio16()
-        self.ejercicio17()
-        self.ejercicio18()
-        self.ejercicio19()
-        self.ejercicio20()
-        self.ejercicio21()
+        self.ejercicio_1()
+        self.ejercicio_2()
+        self.ejercicio_3()
+        self.ejercicio_4()
+        self.ejercicio_5()
+        self.ejercicio_6()
+        self.ejercicio_7()
+        self.ejercicio_8()
+        self.ejercicio_9()
+        self.ejercicio_10()
+        self.ejercicio_11()
+        self.ejercicio_12()
+        self.ejercicio_13()
+        self.ejercicio_14()
+        self.ejercicio_15()
+        self.ejercicio_16()
+        self.ejercicio_17()
+        self.ejercicio_18()
+        self.ejercicio_19()
+        self.ejercicio_20()
+        self.ejercicio_21()
         
         self.df.to_csv(f"{self.ruta_actividad_2}/Actividad_2.csv", index=False)
 ene= ejercicios()
