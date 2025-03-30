@@ -1,4 +1,4 @@
-name: Actividad_1 y 2
+name: Actividad_ 1, 2 y 3 
 
 on:
   push:
@@ -30,11 +30,13 @@ jobs:
         run: python SRC/pad/Actividad_1.py
       - name: paso6 - Ejecutar Actividad 2
         run: python SRC/pad/Actividad_2.py
+      - name: paso7 - Ejecutar Actividad 3
+        run: python SRC/pad/Actividad_3.py
 
       - name: Commit and Push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: entrega actividad 1 y 2
+          commit_message: entrega actividad 3
           commit_user_name: nini gutierrez [GitHub Actions]
           commit_user_email: nini.gutierrez@est.iudigital.edu.co
           commit_author: nini gutierrez <nini.gutierrez@est.iudigital.edu.co>
