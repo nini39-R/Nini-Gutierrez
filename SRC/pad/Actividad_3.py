@@ -16,7 +16,6 @@ class ejercicios:
         self.ruta_Actividad_3 = "{}/SRC/pad/Actividad_3/".format(self.ruta_raiz)
         
     def ejercicio1(self):
-
         # Crea un DataFrame frutas
         frutas = pd.DataFrame({
             "Granadilla": [20],
